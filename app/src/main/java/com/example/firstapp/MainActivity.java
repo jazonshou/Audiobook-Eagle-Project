@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String EXTRA_MESSAGE = "com.example.firstapp.MESSAGE";
@@ -33,16 +34,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-//        switch (view.getId()){
-//            case R.id.button1:
-//                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-//                startActivity(intent);
-//                break;
+        switch (view.getId()){
+            case R.id.button1:
+                Toast t = Toast.makeText(this, "hey", Toast.LENGTH_SHORT);
+                t.show();
+                Intent intent = new Intent(getApplicationContext(), Fable1.class);
+                startActivity(intent);
+                break;
 //            case R.id.button3:
 //                Intent intent2 = new Intent(getApplicationContext(), MainActivity3.class);
 //                startActivity(intent2);
 //                break;
-//        }
+        }
     }
 
 //    public void sendMessage(View view){
