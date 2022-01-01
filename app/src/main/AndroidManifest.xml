@@ -10,21 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
-            android:name=".fables.fox_and_goat.Fox_and_Goat"
+            android:name=".FableActivity"
             android:exported="false" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.firstapp.fables.fox_and_goat.Fox_and_Goat" />
+                android:value="com.example.firstapp.FableActivity" />
         </activity>
         <activity
             android:name=".MainActivity3"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity2"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

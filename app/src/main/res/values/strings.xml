@@ -4,11 +4,11 @@
     <string name="button_send">Send</string>
     <string name="press">Press</string>
 
-    <string name="button1_message">Fable 1</string>
-    <string name="button2_message">Fable 2</string>
-    <string name="button3_message">Fable 3</string>
-    <string name="button4_message">Fable 4</string>
-    <string name="button5_message">Fable 5</string>
+    <string name="button1_message">The Ant and the Grasshopper</string>
+    <string name="button2_message">The Dog and the Wolf</string>
+    <string name="button3_message">The Fox and the Goat</string>
+    <string name="button4_message">The Hare and the Tortoise</string>
+    <string name="button5_message">The Lion and the Mouse</string>
     <string name="button6_message">Fable 6</string>
     <string name="button7_message">Fable 7</string>
     <string name="button8_message">Fable 8</string>

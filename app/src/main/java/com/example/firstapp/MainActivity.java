@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.firstapp.fables.fox_and_goat.Fox_and_Goat;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String EXTRA_MESSAGE = "com.example.firstapp.MESSAGE";
+
+    public static int fable = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +45,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.button1:
-                Intent intent = new Intent(getApplicationContext(), Fox_and_Goat.class);
-                startActivity(intent);
+                fable = 1;
                 break;
-//            case R.id.button3:
-//                Intent intent2 = new Intent(getApplicationContext(), MainActivity3.class);
-//                startActivity(intent2);
-//                break;
+            case R.id.button2:
+                fable = 2;
+                break;
+            case R.id.button3:
+                fable = 3;
+                break;
+            case R.id.button4:
+                fable = 4;
+                break;
+            case R.id.button5:
+                fable = 5;
+                break;
+            case R.id.button6:
+                fable = 6;
+                break;
+            case R.id.button7:
+                fable = 7;
+                break;
+            case R.id.button8:
+                fable = 8;
+                break;
+            case R.id.button9:
+                fable = 9;
+                break;
+            case R.id.button10:
+                fable = 10;
+                break;
         }
+        Intent intent = new Intent(getApplicationContext(), FableActivity.class);
+        startActivity(intent);
     }
 }
