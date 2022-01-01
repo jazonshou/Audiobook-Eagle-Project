@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
-            android:name=".Fable1"
-            android:exported="false" />
+            android:name=".fables.fox_and_goat.Fox_and_Goat"
+            android:exported="false" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.fables.fox_and_goat.Fox_and_Goat" />
+        </activity>
         <activity
             android:name=".MainActivity3"
             android:parentActivityName=".MainActivity" />

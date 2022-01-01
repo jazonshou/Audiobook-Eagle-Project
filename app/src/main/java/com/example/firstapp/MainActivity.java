@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.firstapp.fables.fox_and_goat.Fox_and_Goat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String EXTRA_MESSAGE = "com.example.firstapp.MESSAGE";
@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button four = (Button) findViewById(R.id.button4);
         Button five = (Button) findViewById(R.id.button5);
         Button six = (Button) findViewById(R.id.button6);
+        Button seven = (Button) findViewById(R.id.button7);
+        Button eight = (Button) findViewById(R.id.button8);
+        Button nine = (Button) findViewById(R.id.button9);
+        Button ten = (Button) findViewById(R.id.button10);
 
         one.setOnClickListener(this);
         two.setOnClickListener(this);
@@ -30,15 +34,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         four.setOnClickListener(this);
         five.setOnClickListener(this);
         six.setOnClickListener(this);
+        seven.setOnClickListener(this);
+        eight.setOnClickListener(this);
+        nine.setOnClickListener(this);
+        ten.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.button1:
-                Toast t = Toast.makeText(this, "hey", Toast.LENGTH_SHORT);
-                t.show();
-                Intent intent = new Intent(getApplicationContext(), Fable1.class);
+                Intent intent = new Intent(getApplicationContext(), Fox_and_Goat.class);
                 startActivity(intent);
                 break;
 //            case R.id.button3:
@@ -47,13 +53,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                break;
         }
     }
-
-//    public void sendMessage(View view){
-//        Intent intent = new Intent(this, DisplayMessageActivity.class);
-//        EditText editText = (EditText) findViewById(R.id.editTextTextPersonName);
-//        String message = editText.getText().toString();
-//        intent.putExtra(EXTRA_MESSAGE, message);
-//        startActivity(intent);
-//    }
-
 }

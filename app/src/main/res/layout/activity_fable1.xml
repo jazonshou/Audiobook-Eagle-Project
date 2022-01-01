@@ -4,38 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fable1">
+    tools:context=".fables.fox_and_goat.Fox_and_Goat">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_height="0dp"
 
         android:scrollbars="vertical"
-
         android:text="@string/large_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/mandarin_text" />
 
     <Button
-        android:id="@+id/fable1_button1"
+        android:id="@+id/english_audio"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/fable1_button1_message"
-        app:layout_constraintEnd_toStartOf="@+id/fable1_button2"
+        android:layout_height="@dimen/audio_wife_height"
+        android:text="@string/fable_english_audio_button_message"
+        app:layout_constraintEnd_toStartOf="@+id/mandarin_audio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/fable1_button2"
+        android:id="@+id/mandarin_audio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/fable1_button2_message"
+        android:text="@string/fable_mandarin_audio_button_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/media_player_layout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english_audio"></LinearLayout>
+
+    <Button
+        android:id="@+id/english_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fable_english_text_button_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media_player_layout" />
+
+    <Button
+        android:id="@+id/mandarin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fable_mandarin_text_button_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media_player_layout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

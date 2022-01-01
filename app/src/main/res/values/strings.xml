@@ -10,10 +10,19 @@
     <string name="button4_message">Fable 4</string>
     <string name="button5_message">Fable 5</string>
     <string name="button6_message">Fable 6</string>
+    <string name="button7_message">Fable 7</string>
+    <string name="button8_message">Fable 8</string>
+    <string name="button9_message">Fable 9</string>
+    <string name="button10_message">Fable 10</string>
+
+
+
     <string name="title_activity_scrolling">ScrollingActivity</string>
 
-    <string name="fable1_button1_message">English Audio</string>
-    <string name="fable1_button2_message">Mandarin Audio</string>
+    <string name="fable_english_audio_button_message">English Audio</string>
+    <string name="fable_mandarin_audio_button_message">Mandarin Audio</string>
+    <string name="fable_english_text_button_message">English</string>
+    <string name="fable_mandarin_text_button_message">Mandarin</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
