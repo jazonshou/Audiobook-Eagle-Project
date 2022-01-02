@@ -29,7 +29,10 @@ import java.util.Objects;
 import nl.changer.audiowife.AudioWife;
 
 public class FableActivity extends AppCompatActivity implements View.OnClickListener {
-    ArgPlayerSmallView argMusic;
+    private ArgPlayerSmallView argMusic;
+    private ArgAudio engAud, mandAud;
+    private String engTxt, mandTxt;
+    private TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,48 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
         argMusic = (ArgPlayerSmallView) findViewById(R.id.argmusicplayer);
         argMusic.disableNextPrevButtons();
         argMusic.disableErrorView();
+
+        // Set the desired text based on which fable was clicked
+        switch(MainActivity.fable) {
+            // Ant and Grasshopper
+            case 1:
+                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Ant and the Grasshopper (English)", R.raw.antgrasshopper);
+                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engTxt = AntGrasshopper.E_BODY;
+                mandTxt = AntGrasshopper.M_BODY;
+                break;
+            // Dog and Wolf
+            case 2:
+                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Dog and the Wolf (English)", R.raw.dogwolf2);
+                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engTxt = DogWolf.E_BODY;
+                mandTxt = DogWolf.M_BODY;
+                break;
+            // Fox and Goat
+            case 3:
+                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Fox and the Goat (English)", R.raw.foxgoat);
+                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engTxt = FoxGoat.E_BODY;
+                mandTxt = FoxGoat.M_BODY;
+                break;
+            // Hare and Tortoise
+            case 4:
+                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Hare and the Tortoise (English)", R.raw.haretortoise);
+                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engTxt = TortoiseHare.E_BODY;
+                mandTxt = TortoiseHare.M_BODY;
+                break;
+            // Lion and Mouse
+            case 5:
+                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Lion and the Mouse (English)", R.raw.lionmouse);
+                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engTxt = LionMouse.E_BODY;
+                mandTxt = LionMouse.M_BODY;
+                break;
+        }
+        // Set default text
+        tv = (TextView) findViewById(R.id.textView3);
+        tv.setText(engTxt);
     }
 
     @Override
@@ -69,114 +114,23 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     public void onClick(View view) {
-        TextView tv = (TextView) findViewById(R.id.textView3);
-
-        switch (MainActivity.fable) {
-            case 1:
-                ArgAudio eng = ArgAudio.createFromRaw("bob", "eng", R.raw.antgrasshopper);
-                ArgAudio mand = ArgAudio.createFromRaw("me", "crap", R.raw.chinese_new_year_final);
-                tv.setText(AntGrasshopper.E_BODY);
-                switch (view.getId()) {
-                    case R.id.english_audio:
-                        argMusic.play(eng);
-                        break;
-
-                    case R.id.mandarin_audio:
-                        argMusic.play(mand);
-                        break;
-
-                    case R.id.english_text:
-                        tv.setText(AntGrasshopper.E_BODY);
-                        break;
-
-                    case R.id.mandarin_text:
-                        tv.setText(FoxGoat.M_BODY);
-                        break;
-                }
+        switch (view.getId()) {
+            case R.id.english_audio:
+                argMusic.play(engAud);
                 break;
-//            case 2:
-//                uri = Uri.fromFile(h.createTempFromRaw(R.raw.dogwolf2));
-//                switch (view.getId()) {
-//                    case R.id.english_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.dogwolf2));
-//                        break;
-//
-//                    case R.id.mandarin_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.chinese_new_year_final));
-//                        break;
-//
-//                    case R.id.english_text:
-//                        tv.setText(DogWolf.E_BODY);
-//                        break;
-//
-//                    case R.id.mandarin_text:
-//                        tv.setText(DogWolf.M_BODY);
-//                        break;
-//                }
-//                break;
-//            case 3:
-//                uri = Uri.fromFile(h.createTempFromRaw(R.raw.foxgoat));
-//                switch (view.getId()) {
-//                    case R.id.english_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.foxgoat));
-//                        break;
-//
-//                    case R.id.mandarin_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.chinese_new_year_final));
-//                        break;
-//
-//                    case R.id.english_text:
-//                        tv.setText(FoxGoat.E_BODY);
-//                        break;
-//
-//                    case R.id.mandarin_text:
-//                        tv.setText(FoxGoat.M_BODY);
-//                        break;
-//                }
-//                break;
-//            case 4:
-//                uri = Uri.fromFile(h.createTempFromRaw(R.raw.haretortoise));
-//                switch (view.getId()) {
-//                    case R.id.english_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.haretortoise));
-//                        break;
-//
-//                    case R.id.mandarin_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.chinese_new_year_final));
-//                        break;
-//
-//                    case R.id.english_text:
-//                        tv.setText(TortoiseHare.E_BODY);
-//                        break;
-//
-//                    case R.id.mandarin_text:
-//                        tv.setText(TortoiseHare.M_BODY);
-//                        break;
-//                }
-//                break;
-//            case 5:
-//                uri = Uri.fromFile(h.createTempFromRaw(R.raw.lionmouse));
-//                switch (view.getId()) {
-//                    case R.id.english_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.lionmouse));
-//                        break;
-//
-//                    case R.id.mandarin_audio:
-//                        uri = Uri.fromFile(h.createTempFromRaw(R.raw.chinese_new_year_final));
-//                        break;
-//
-//                    case R.id.english_text:
-//                        tv.setText(LionMouse.E_BODY);
-//                        break;
-//
-//                    case R.id.mandarin_text:
-//                        tv.setText(LionMouse.M_BODY);
-//                        break;
-//                }
-//                break;
+
+            case R.id.mandarin_audio:
+                argMusic.play(mandAud);
+                break;
+
+            case R.id.english_text:
+                tv.setText(engTxt);
+                break;
+
+            case R.id.mandarin_text:
+                tv.setText(mandTxt);
+                break;
         }
-        // Refreshes AudioWife with correct audio file
-//        AudioWife.getInstance().init(this, uri).useDefaultUi(v, getLayoutInflater());
     }
 
     @Override
