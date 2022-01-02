@@ -36,14 +36,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/media_player_layout"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:orientation="vertical"
+<!--    <LinearLayout-->
+<!--        android:id="@+id/media_player_layout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/english_audio"></LinearLayout>-->
+
+    <com.arges.sepan.argmusicplayer.PlayerViews.ArgPlayerSmallView
+        android:id="@+id/argmusicplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/english_audio"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/english_audio" />
 
     <Button
         android:id="@+id/english_text"
@@ -51,7 +60,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fable_english_text_button_message"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/media_player_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/argmusicplayer" />
 
     <Button
         android:id="@+id/mandarin_text"
@@ -59,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fable_mandarin_text_button_message"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/media_player_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/argmusicplayer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
