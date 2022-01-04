@@ -11,39 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
 
+        android:fontFamily="sans-serif"
         android:scrollbars="vertical"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mandarin_text" />
-
-    <Button
-        android:id="@+id/english_audio"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/audio_wife_height"
-        android:text="@string/fable_english_audio_button_message"
-        app:layout_constraintEnd_toStartOf="@+id/mandarin_audio"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/mandarin_audio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fable_mandarin_audio_button_message"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/media_player_layout"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/english_audio"></LinearLayout>-->
+        app:layout_constraintTop_toBottomOf="@+id/fable_title"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.arges.sepan.argmusicplayer.PlayerViews.ArgPlayerSmallView
         android:id="@+id/argmusicplayer"
@@ -52,23 +28,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/english_audio" />
+        app:layout_constraintTop_toBottomOf="@+id/english_button" />
 
-    <Button
-        android:id="@+id/english_text"
+    <TextView
+        android:id="@+id/fable_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fable_english_text_button_message"
+        android:fontFamily="sans-serif"
+        android:textSize="38sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/argmusicplayer" />
 
     <Button
-        android:id="@+id/mandarin_text"
+        android:id="@+id/english_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fable_mandarin_text_button_message"
+        android:text="@string/fable_english"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mandarin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fable_mandarin"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/argmusicplayer" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

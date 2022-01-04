@@ -31,8 +31,8 @@ import nl.changer.audiowife.AudioWife;
 public class FableActivity extends AppCompatActivity implements View.OnClickListener {
     private ArgPlayerSmallView argMusic;
     private ArgAudio engAud, mandAud;
-    private String engTxt, mandTxt;
-    private TextView tv;
+    private String engTxt, mandTxt, engTitle, mandTitle;
+    private TextView tv, title_tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,20 +47,17 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // Buttons
-        Button englishAudio = (Button)findViewById(R.id.english_audio);
-        Button mandarinAudio = (Button)findViewById(R.id.mandarin_audio);
-        Button englishText = (Button)findViewById(R.id.english_text);
-        Button mandarinText = (Button)findViewById(R.id.mandarin_text);
+        Button english = (Button) findViewById(R.id.english_button);
+        Button mandarin = (Button) findViewById(R.id.mandarin_button);
 
-        englishAudio.setOnClickListener(this);
-        mandarinAudio.setOnClickListener(this);
-        englishText.setOnClickListener(this);
-        mandarinText.setOnClickListener(this);
+        english.setOnClickListener(this);
+        mandarin.setOnClickListener(this);
 
         // Init ArgMusicPlayer
         argMusic = (ArgPlayerSmallView) findViewById(R.id.argmusicplayer);
         argMusic.disableNextPrevButtons();
         argMusic.disableErrorView();
+        argMusic.disableProgress();
 
         // Set the desired text based on which fable was clicked
         switch(MainActivity.fable) {
@@ -70,6 +67,8 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
                 mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
                 engTxt = AntGrasshopper.E_BODY;
                 mandTxt = AntGrasshopper.M_BODY;
+                engTitle = AntGrasshopper.E_TITLE;
+                mandTitle = AntGrasshopper.M_TITLE;
                 break;
             // Dog and Wolf
             case 2:
@@ -103,6 +102,9 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
         // Set default text
         tv = (TextView) findViewById(R.id.textView3);
         tv.setText(engTxt);
+
+        title_tv = (TextView) findViewById(R.id.fable_title);
+        title_tv.setText(engTitle);
     }
 
     @Override
@@ -115,19 +117,13 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.english_audio:
+            case R.id.english_button:
                 argMusic.play(engAud);
-                break;
-
-            case R.id.mandarin_audio:
-                argMusic.play(mandAud);
-                break;
-
-            case R.id.english_text:
                 tv.setText(engTxt);
                 break;
 
-            case R.id.mandarin_text:
+            case R.id.mandarin_button:
+                argMusic.play(mandAud);
                 tv.setText(mandTxt);
                 break;
         }
