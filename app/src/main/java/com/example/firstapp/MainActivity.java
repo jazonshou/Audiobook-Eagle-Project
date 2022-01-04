@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button eight = (Button) findViewById(R.id.button8);
         Button nine = (Button) findViewById(R.id.button9);
         Button ten = (Button) findViewById(R.id.button10);
+        Button credits = (Button) findViewById(R.id.credits_button);
 
         one.setOnClickListener(this);
         two.setOnClickListener(this);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         eight.setOnClickListener(this);
         nine.setOnClickListener(this);
         ten.setOnClickListener(this);
+        credits.setOnClickListener(this);
     }
 
     @Override
@@ -73,6 +75,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button10:
                 fable = 10;
+                break;
+            case R.id.credits_button:
+
                 break;
         }
         Intent intent = new Intent(getApplicationContext(), FableActivity.class);

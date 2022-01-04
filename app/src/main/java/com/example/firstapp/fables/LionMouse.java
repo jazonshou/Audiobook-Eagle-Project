@@ -6,7 +6,7 @@ public class LionMouse {
     public static final String E_MORAL =
             "Little friends may prove great friends.";
     public static final String E_BODY =
-            "Once when a Lion was asleep a little Mouse began running up" +
+            "    Once when a Lion was asleep a little Mouse began running up" +
                     " and down upon him; this soon wakened the Lion, who placed his huge" +
                     " paw upon him, and opened his big jaws to swallow him.  \"Pardon, O" +
                     " King,\" cried the little Mouse: \"forgive me this time, I shall" +

@@ -10,13 +10,13 @@ public class AntGrasshopper {
                     " chirping and singing to its heart's content.  An Ant passed by," +
                     " bearing along with great toil an ear of corn he was taking to the" +
                     " nest." +
-                    "\n" +
+                    "\n\n" +
                     "    \"Why not come and chat with me,\" said the Grasshopper," +
                     " \"instead of toiling and moiling in that way?\"" +
-                    "\n" +
+                    "\n\n" +
                     "    \"I am helping to lay up food for the winter,\" said the Ant," +
                     " \"and recommend you to do the same.\"" +
-                    "\n" +
+                    "\n\n" +
                     "    \"Why bother about winter?\" said the Grasshopper; we have got" +
                     " plenty of food at present.\"  But the Ant went on its way and" +
                     " continued its toil.  When the winter came the Grasshopper had no" +

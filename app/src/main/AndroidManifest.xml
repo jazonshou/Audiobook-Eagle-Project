@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
+            android:name=".CreditsActivity"
+            android:exported="false" />
+        <activity
             android:name=".FableActivity"
-            android:exported="false" >
-
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.firstapp.FableActivity" />

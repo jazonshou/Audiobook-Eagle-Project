@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">Aesop Fables Audiobook</string>
 
-    <string name="button1_message">The Ant and the Grasshopper</string>
-    <string name="button2_message">The Dog and the Wolf</string>
-    <string name="button3_message">The Fox and the Goat</string>
-    <string name="button4_message">The Hare and the Tortoise</string>
-    <string name="button5_message">The Lion and the Mouse</string>
+    <string name="button1_message">The Ant and the Grasshopper\n螞蟻和蚱蜢</string>
+    <string name="button2_message">The Dog and the Wolf\n狗和狼</string>
+    <string name="button3_message">The Fox and the Goat\n狐狸和山羊</string>
+    <string name="button4_message">The Hare and the Tortoise\n兔子和烏龜</string>
+    <string name="button5_message">The Lion and the Mouse\n獅子與老鼠</string>
     <string name="button6_message">Fable 6</string>
     <string name="button7_message">Fable 7</string>
     <string name="button8_message">Fable 8</string>
     <string name="button9_message">Fable 9</string>
     <string name="button10_message">Fable 10</string>
-
+    <string name="credits_button_message">Credits 引文</string>
 
 
     <string name="title_activity_scrolling">ScrollingActivity</string>

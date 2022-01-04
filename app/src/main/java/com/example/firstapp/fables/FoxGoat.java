@@ -6,7 +6,7 @@ public class FoxGoat {
     public static final String E_MORAL =
             "Look before you leap.";
     public static final String E_BODY =
-            "A FOX one day fell into a deep well and could find no means of" +
+            "    A FOX one day fell into a deep well and could find no means of" +
                     " escape.  A Goat, overcome with thirst, came to the same well, and" +
                     " seeing the Fox, inquired if the water was good.  Concealing his" +
                     " sad plight under a merry guise, the Fox indulged in a lavish" +
