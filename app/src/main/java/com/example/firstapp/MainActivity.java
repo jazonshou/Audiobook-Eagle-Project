@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        boolean openCredits = false;
         switch (view.getId()){
             case R.id.button1:
                 fable = 1;
@@ -77,10 +78,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fable = 10;
                 break;
             case R.id.credits_button:
-
+                openCredits = true;
+                Intent creditsIntent = new Intent(getApplicationContext(), CreditsActivity.class);
+                startActivity(creditsIntent);
                 break;
         }
-        Intent intent = new Intent(getApplicationContext(), FableActivity.class);
-        startActivity(intent);
+        if(!openCredits) {
+            Intent intent = new Intent(getApplicationContext(), FableActivity.class);
+            startActivity(intent);
+        }
     }
 }

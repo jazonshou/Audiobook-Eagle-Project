@@ -6,11 +6,11 @@
     <string name="button3_message">The Fox and the Goat\n狐狸和山羊</string>
     <string name="button4_message">The Hare and the Tortoise\n兔子和烏龜</string>
     <string name="button5_message">The Lion and the Mouse\n獅子與老鼠</string>
-    <string name="button6_message">Fable 6</string>
-    <string name="button7_message">Fable 7</string>
-    <string name="button8_message">Fable 8</string>
-    <string name="button9_message">Fable 9</string>
-    <string name="button10_message">Fable 10</string>
+    <string name="button6_message">The Boys and the Frogs\n男孩和青蛙</string>
+    <string name="button7_message">The Shepherd Boy and the Wolf\n牧童和狼</string>
+    <string name="button8_message">The Frogs and the Well\n青蛙和井</string>
+    <string name="button9_message">Mercury and the Woodman\n誠實的樵夫</string>
+    <string name="button10_message">The Milkmaid and Her Pail\n挤牛奶的姑娘</string>
     <string name="credits_button_message">Credits 引文</string>
 
 
@@ -18,6 +18,7 @@
 
     <string name="fable_english">English 英文</string>
     <string name="fable_mandarin">Mandarin 中文</string>
+
 
 
     <string name="action_settings">Settings</string>

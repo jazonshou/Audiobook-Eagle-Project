@@ -27,7 +27,7 @@ public class FoxGoat {
                     " dangers from which you had no means of escape.\"";
 
     public static final String M_TITLE =
-            "asdf";
+            "狐狸和山羊";
     public static final String M_MORAL =
             "asdf";
     public static final String M_BODY =

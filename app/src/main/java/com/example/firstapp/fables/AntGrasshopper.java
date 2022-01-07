@@ -25,7 +25,7 @@ public class AntGrasshopper {
                     " collected in the summer.";
 
     public static final String M_TITLE =
-            "asdf";
+            "螞蟻和蚱蜢";
     public static final String M_MORAL =
             "asdf";
     public static final String M_BODY =

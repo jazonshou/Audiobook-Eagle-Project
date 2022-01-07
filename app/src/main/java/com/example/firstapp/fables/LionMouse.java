@@ -22,7 +22,7 @@ public class LionMouse {
                     " said the little Mouse.";
 
     public static final String M_TITLE =
-            "asdf";
+            "獅子與老鼠";
     public static final String M_MORAL =
             "asdf";
     public static final String M_BODY =

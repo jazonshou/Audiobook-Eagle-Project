@@ -26,7 +26,7 @@ public class TortoiseHare {
                     " up in time to save the race.";
 
     public static final String M_TITLE =
-            "asdf";
+            "兔子和烏龜";
     public static final String M_MORAL =
             "asdf";
     public static final String M_BODY =

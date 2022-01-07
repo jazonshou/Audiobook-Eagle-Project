@@ -31,7 +31,7 @@ public class DogWolf {
                     " Dog.\"";
 
     public static final String M_TITLE =
-            "asdf";
+            "狗和狼";
     public static final String M_MORAL =
             "asdf";
     public static final String M_BODY =
