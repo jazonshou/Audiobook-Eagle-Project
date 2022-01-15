@@ -27,7 +27,7 @@ public class DogWolf {
                     " where the collar is put on at night to keep me chained up; it" +
                     " chafes a bit, but one soon gets used to it.\"" +
                     " \n\n" +
-                    "     \"Is that all?\" said the Wolf.  \"Then good-bye to you, Master" +
+                    "     \"Is that all?\" said the Wolf.  \"Then goodbye to you, Master" +
                     " Dog.\"";
 
     public static final String M_TITLE =

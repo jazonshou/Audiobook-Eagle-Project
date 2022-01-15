@@ -6,17 +6,17 @@ public class FoxGoat {
     public static final String E_MORAL =
             "Look before you leap.";
     public static final String E_BODY =
-            "    A FOX one day fell into a deep well and could find no means of" +
+            "    A Fox one day fell into a deep well and could find no means of" +
                     " escape.  A Goat, overcome with thirst, came to the same well, and" +
                     " seeing the Fox, inquired if the water was good.  Concealing his" +
-                    " sad plight under a merry guise, the Fox indulged in a lavish" +
+                    " sad plight under a merry guise, the Fox indulged in lavish" +
                     " praise of the water, saying it was excellent beyond measure, and" +
                     " encouraging him to descend.  The Goat, mindful only of his" +
                     " thirst, thoughtlessly jumped down, but just as he drank, the Fox" +
                     " informed him of the difficulty they were both in and suggested a" +
                     " scheme for their common escape.  \"If,\" said he, \"you will place" +
                     " your forefeet upon the wall and bend your head, I will run up" +
-                    " your back and escape, and will help you out afterwards.\"  The Goat" +
+                    " your back and escape, and will help you out afterward.\"  The Goat" +
                     " readily assented and the Fox leaped upon his back.  Steadying" +
                     " himself with the Goat's horns, he safely reached the mouth of the" +
                     " well and made off as fast as he could.  When the Goat upbraided" +

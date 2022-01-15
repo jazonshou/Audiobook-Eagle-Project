@@ -6,7 +6,7 @@ public class BoysWolf {
     public static final String E_MORAL =
             "There is no believing a liar, even when he speaks the truth.";
     public static final String E_BODY =
-            "    A SHEPHERD-BOY, who watched a flock of sheep near a village," +
+            "    A shepherd boy, who watched a flock of sheep near a village," +
                     " brought out the villagers three or four times by crying out," +
                     " \"Wolf! Wolf!\"  and when his neighbors came to help him, laughed at" +
                     " them for their pains.  The Wolf, however, did truly come at last. " +

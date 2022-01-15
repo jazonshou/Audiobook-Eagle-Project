@@ -14,9 +14,9 @@ public class MilkmaidPail {
                     " money that I get from the sale of these eggs I'll buy myself a new" +
                     " dimity frock and a chip hat; and when I go to market, won't all" +
                     " the young men come up and speak to me!  Polly Shaw will be that" +
-                    " jealous; but I don't care.  I shall just look at her and toss my" +
+                    " jealous, but I don't care.  I shall just look at her and toss my" +
                     " head like this.  As she spoke she tossed her head back, the Pail" +
-                    " fell off it, and all the milk was spilt.  So she had to go home" +
+                    " fell off it, and all the milk was spilled.  So she had to go home" +
                     " and tell her mother what had occurred." +
                     "\n" +
                     "    \"Ah, my child,\" said the mother," +

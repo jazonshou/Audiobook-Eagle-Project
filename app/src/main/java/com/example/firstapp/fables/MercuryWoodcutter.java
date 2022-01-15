@@ -31,8 +31,9 @@ public class MercuryWoodcutter {
                     " to give him the golden axe, but also refused to recover for him the" +
                     " one he had let fall into the stream.";
 
+
     public static final String M_TITLE =
-            "誠實的樵夫";
+            "誠實的樵夫2";
     public static final String M_MORAL =
             "asdf";
     public static final String M_BODY =
