@@ -18,8 +18,12 @@ public class FrogsWell {
     public static final String M_TITLE =
             "青蛙和井";
     public static final String M_MORAL =
-            "asdf";
+            "三思而後行。";
     public static final String M_BODY =
-            "asdf";
+            "    兩隻青蛙一起住在沼澤里。 但是在一個炎熱的夏天，沼澤乾涸了。不得已他們離開這片沼澤，去" +
+                    "尋找另一個地方居住，因為如果可以的話，青蛙還是喜歡潮濕的地方。 慢慢地，他們來到" +
+                    "一口深井旁。一隻青蛙低頭看著井，對另一隻青蛙說：“這看起來不錯，很涼爽。我們跳" +
+                    "進去吧，在這里安頓下來。” 但另一隻青蛙比較聰明，回答說：“不要這麼快，我的朋友。" +
+                    "如果這口井像沼澤一樣乾涸，我們怎麼能再出來呢？”";
 
 }

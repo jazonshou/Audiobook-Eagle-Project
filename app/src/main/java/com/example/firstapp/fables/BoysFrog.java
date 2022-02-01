@@ -15,7 +15,9 @@ public class BoysFrog {
     public static final String M_TITLE =
             "男孩和青蛙";
     public static final String M_MORAL =
-            "asdf";
+            "一個人的快樂可能是另一個人的痛苦。";
     public static final String M_BODY =
-            "asdf";
+            "    一些男孩在池塘附近玩耍，看到水中有許多青蛙，就開始用石頭砸它們。" +
+                    "他們砸死了其中幾隻青蛙。這時一隻青蛙從水中抬起頭，喊道：" +
+                    "“請停下來，我的孩子們：對你們來說是遊戲，對我們來說就是死亡。”";
 }

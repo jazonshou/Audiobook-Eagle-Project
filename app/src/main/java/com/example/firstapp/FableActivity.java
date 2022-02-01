@@ -68,64 +68,64 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
         switch(MainActivity.fable) {
             // Ant and Grasshopper
             case 1:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Ant and the Grasshopper (English)", R.raw.antgrasshopper);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Ant and the Grasshopper (English)", R.raw.antgrasshopper);
+                mandAud = ArgAudio.createFromRaw("", "The Ant and the Grasshopper (Mandarin)", R.raw.m_antgrasshopper);
                 engTxt = AntGrasshopper.E_BODY; mandTxt = AntGrasshopper.M_BODY;
                 engTitle = AntGrasshopper.E_TITLE; mandTitle = AntGrasshopper.M_TITLE;
                 engMoral = AntGrasshopper.E_MORAL; mandMoral = AntGrasshopper.M_MORAL;
                 break;
             // Dog and Wolf
             case 2:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Dog and the Wolf (English)", R.raw.dogwolf2);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Dog and the Wolf (English)", R.raw.dogwolf2);
+                mandAud = ArgAudio.createFromRaw("", "The Dog and the Wolf (Mandarin)", R.raw.m_dogwolf);
                 engTxt = DogWolf.E_BODY; mandTxt = DogWolf.M_BODY;
                 engTitle = DogWolf.E_TITLE; mandTitle = DogWolf.M_TITLE;
                 engMoral = DogWolf.E_MORAL; mandMoral = DogWolf.M_MORAL;
                 break;
             // Fox and Goat
             case 3:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Fox and the Goat (English)", R.raw.foxgoat);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Fox and the Goat (English)", R.raw.foxgoat);
+                mandAud = ArgAudio.createFromRaw("", "The Fox and the Goat (Mandarin)", R.raw.m_foxgoat);
                 engTxt = FoxGoat.E_BODY; mandTxt = FoxGoat.M_BODY;
                 engTitle = FoxGoat.E_TITLE; mandTitle = FoxGoat.M_TITLE;
                 engMoral = FoxGoat.E_MORAL; mandMoral = FoxGoat.M_MORAL;
                 break;
             // Hare and Tortoise
             case 4:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Hare and the Tortoise (English)", R.raw.haretortoise);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Hare and the Tortoise (English)", R.raw.haretortoise);
+                mandAud = ArgAudio.createFromRaw("", "The Hare and the Tortoise", R.raw.m_tortoisehare);
                 engTxt = TortoiseHare.E_BODY; mandTxt = TortoiseHare.M_BODY;
                 engTitle = TortoiseHare.E_TITLE; mandTitle = TortoiseHare.M_TITLE;
                 engMoral = TortoiseHare.E_MORAL; mandMoral = TortoiseHare.M_MORAL;
                 break;
             // Lion and Mouse
             case 5:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Lion and the Mouse (English)", R.raw.lionmouse);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Lion and the Mouse (English)", R.raw.lionmouse);
+                mandAud = ArgAudio.createFromRaw("", "The Lion and the Mouse (Mandarin)", R.raw.m_lionmouse);
                 engTxt = LionMouse.E_BODY; mandTxt = LionMouse.M_BODY;
                 engTitle = LionMouse.E_TITLE; mandTitle = LionMouse.M_TITLE;
                 engMoral = LionMouse.E_MORAL; mandMoral = LionMouse.M_MORAL;
                 break;
             // The Boys and the Frogs
             case 6:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Boys and the Frogs (English)", R.raw.boysfrogs);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Boys and the Frogs (English)", R.raw.boysfrogs);
+                mandAud = ArgAudio.createFromRaw("", "The Boys and the Frogs (Mandarin)", R.raw.m_boyfrogs);
                 engTxt = BoysFrog.E_BODY; mandTxt = BoysFrog.M_BODY;
                 engTitle = BoysFrog.E_TITLE; mandTitle = BoysFrog.M_TITLE;
                 engMoral = BoysFrog.E_MORAL; mandMoral = BoysFrog.M_MORAL;
                 break;
             // Boys and Wolf
             case 7:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Shepherd Boy and the Wolf (English)", R.raw.boywolf);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Shepherd Boy and the Wolf (English)", R.raw.boywolf);
+                mandAud = ArgAudio.createFromRaw("", "The Shepherd Boy and the Wolf (Mandarin)", R.raw.m_boywolf);
                 engTxt = BoysWolf.E_BODY; mandTxt = BoysWolf.M_BODY;
                 engTitle = BoysWolf.E_TITLE; mandTitle = BoysWolf.M_TITLE;
                 engMoral = BoysWolf.E_MORAL; mandMoral = BoysWolf.M_MORAL;
                 break;
             // Frogs and Well
             case 8:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Frogs and the Well (English)", R.raw.frogswell);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Frogs and the Well (English)", R.raw.frogswell);
+                mandAud = ArgAudio.createFromRaw("", "The Frogs and the Well (Mandarin)", R.raw.m_frogswell);
                 engTxt = FrogsWell.E_BODY; mandTxt = FrogsWell.M_BODY;
                 engTitle = FrogsWell.E_TITLE; mandTitle = FrogsWell.M_TITLE;
                 engMoral = FrogsWell.E_MORAL; mandMoral = FrogsWell.M_MORAL;
@@ -133,15 +133,15 @@ public class FableActivity extends AppCompatActivity implements View.OnClickList
             // Mercury and Woodcutter
             case 9:
                 engAud = ArgAudio.createFromRaw("Anna Zhou", "Mercury and the Woodman (English)", R.raw.mercurywoodcutter);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                mandAud = ArgAudio.createFromRaw("asdf", "Mercury and the Woodman (Mandarin)", R.raw.m_mercurywoodcutter);
                 engTxt = MercuryWoodcutter.E_BODY; mandTxt = MercuryWoodcutter.M_BODY;
                 engTitle = MercuryWoodcutter.E_TITLE; mandTitle = MercuryWoodcutter.M_TITLE;
                 engMoral = MercuryWoodcutter.E_MORAL; mandMoral = MercuryWoodcutter.M_MORAL;
                 break;
             // Milkmaid and Pail
             case 10:
-                engAud = ArgAudio.createFromRaw("Anna Zhou", "The Milkmaid and Her Pail (English)", R.raw.milkmaidpail);
-                mandAud = ArgAudio.createFromRaw("asdf", "asdf", R.raw.chinese_new_year_final);
+                engAud = ArgAudio.createFromRaw("", "The Milkmaid and Her Pail (English)", R.raw.milkmaidpail);
+                mandAud = ArgAudio.createFromRaw("", "The Milkmaid and Her Pail", R.raw.m_milkmaidpail);
                 engTxt = MilkmaidPail.E_BODY; mandTxt = MilkmaidPail.M_BODY;
                 engTitle = MilkmaidPail.E_TITLE; mandTitle = MilkmaidPail.M_TITLE;
                 engMoral = MilkmaidPail.E_MORAL; mandMoral = MilkmaidPail.M_MORAL;

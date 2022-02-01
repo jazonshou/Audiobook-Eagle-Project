@@ -19,7 +19,10 @@ public class BoysWolf {
     public static final String M_TITLE =
             "牧童和狼";
     public static final String M_MORAL =
-            "asdf";
+            "沒有人相信一個騙子，即使他說的是真話。";
     public static final String M_BODY =
-            "asdf";
+            "    一個牧童在村子附近放牧著一群羊。他突然大喊，“狼！狼！” 當村民們出來幫助他時，他嘲笑他們被他騙了" +
+                    "。牧童重複這個把戲三四次。 最後，狼終於真的來了。 牧童此時非常驚慌失措，驚恐地喊道：" + "" +
+                    "“救命啊，求求大家快來幫我吧，狼把一隻一隻羊都咬死了。” 但是這次沒有人理會他的救，也沒有" + "" +
+                    "人出來幫助。 狼無所畏懼，悠閒地把所有的羊一隻一隻得咬死了。";
 }
