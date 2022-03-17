@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button eight = (Button) findViewById(R.id.button8);
         Button nine = (Button) findViewById(R.id.button9);
         Button ten = (Button) findViewById(R.id.button10);
-        Button credits = (Button) findViewById(R.id.credits_button);
 
         one.setOnClickListener(this);
         two.setOnClickListener(this);
@@ -40,12 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         eight.setOnClickListener(this);
         nine.setOnClickListener(this);
         ten.setOnClickListener(this);
-        credits.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        boolean openCredits = false;
         switch (view.getId()){
             case R.id.button1:
                 fable = 1;
@@ -77,15 +74,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button10:
                 fable = 10;
                 break;
-            case R.id.credits_button:
-                openCredits = true;
-                Intent creditsIntent = new Intent(getApplicationContext(), CreditsActivity.class);
-                startActivity(creditsIntent);
-                break;
         }
-        if(!openCredits) {
-            Intent intent = new Intent(getApplicationContext(), FableActivity.class);
-            startActivity(intent);
-        }
+        Intent intent = new Intent(getApplicationContext(), FableActivity.class);
+        startActivity(intent);
     }
 }
