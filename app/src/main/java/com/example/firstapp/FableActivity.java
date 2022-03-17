@@ -27,7 +27,6 @@ import com.example.firstapp.fables.LionMouse;
 import com.example.firstapp.fables.MercuryWoodcutter;
 import com.example.firstapp.fables.MilkmaidPail;
 import com.example.firstapp.fables.TortoiseHare;
-import com.example.firstapp.helper_classes.HelperFunctions;
 
 import java.util.Objects;
 
