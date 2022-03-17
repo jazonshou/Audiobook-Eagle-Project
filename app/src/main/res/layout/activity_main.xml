@@ -114,17 +114,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button7" />
 
-        <Button
-            android:id="@+id/credits_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/credits_button_message"
-            android:textSize="@dimen/fable_button_text_size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button10" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
