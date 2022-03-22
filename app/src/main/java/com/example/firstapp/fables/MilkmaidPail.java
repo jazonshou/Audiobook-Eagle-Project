@@ -17,25 +17,22 @@ public class MilkmaidPail {
                     " jealous, but I don't care.  I shall just look at her and toss my" +
                     " head like this.  As she spoke she tossed her head back, the Pail" +
                     " fell off it, and all the milk was spilled.  So she had to go home" +
-                    " and tell her mother what had occurred." +
+                    " and tell her mother what had occurred.\n" +
                     "\n" +
-                    "    \"Ah, my child,\" said the mother," +
+                    "    \"Ah, my child,\" said the mother,\n" +
                     "\n" +
                     "    \"Do not count your chickens before they are hatched.\"";
 
     public static final String M_TITLE =
-            "挤牛奶的姑娘";
+            "擠奶的姑娘和他的桶子";
     public static final String M_MORAL =
-            "在孵化之前不要數你的雞。";
+            "小雞沒孵化出來之前不要去數，也就是說，不要高興得過早。";
     public static final String M_BODY =
-            "    擠奶女工帕蒂頭上頂著桶裝牛奶去市場。 她一邊走一邊開始盤算用買牛奶的錢該怎麼辦。 “我要" +
-                    "從農夫布朗那裡買一些家禽，”她說，“它們每天早上都會下蛋，我會賣給牧師的妻子。" +
-                    "我用賣這些蛋的錢買給自己 一件新的低調連衣裙和一頂破舊的帽子；當我去市場時" +
-                    "，不是所有的年輕人都過來跟我說話嗎？波莉·肖會那麼嫉妒，但我不在乎。我只是看著" +
-                    "她 就這樣把我的頭往後一甩。說著把頭往後一甩，桶從桶上掉了下來，所有的牛奶都灑" +
-                    "了出來。所以她只好回家告訴媽媽發生了什麼事。\n" +
-                    "\n" +
-                    "    “啊，我的孩子，”母親說，\n" +
-                    "\n" +
-                    "    “在孵化之前不要數你的雞。”\n";
+            "    派蒂是一位擠奶的姑娘，她頭上頂著一桶剛擠好的奶，打算到市場去賣。她一邊走一邊想，”我打算到" +
+                    "布朗農夫那裡去買一些雞，然後每早晨這些雞都會下一些蛋，我就可以把這些蛋賣給牧師太" +
+                    "太，然後我就可以用這一些錢給我自己買一件有條紋的連身裙和帽子，然後我就要穿著他們" +
+                    "上市場，然後市場上的年輕男士都會過來跟我搭訕！然後蕭波莉一定會嫉妒我，但是沒有關" +
+                    "係，我不在乎，我只會甩甩頭看著她。正當派蒂自言自語的時候，她不小心把頭一甩，頭上" +
+                    "頂著的牛奶桶子就打翻了，她只好回去告訴媽媽事情發生的經過，她媽媽說，” 在小雞從蛋" +
+                    "裏孵出來之前，不要急著算你會有多少隻雞。";
 }
