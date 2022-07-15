@@ -11,7 +11,9 @@ This repository contains a simple audiobook Android app for my [Eagle Project](h
 ## Photos of the App
 
 * App Index
-![Index](Index.jpeg)
+
+<img src="/Index.jpeg" alt="Index" style="length:750px;"/>
+
 * Example English Fable
 ![Index](Example Fable English.jpeg)
 * Example Chinese Fable
