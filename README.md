@@ -12,12 +12,15 @@ This repository contains a simple audiobook Android app for my [Eagle Project](h
 
 * App Index
 
-<img src="/Index.jpeg" alt="Index" style="length:750px;"/>
+<img src="/Index.jpeg" alt="Index" style="length:500px;"/>
 
 * Example English Fable
-![Index](Example Fable English.jpeg)
+
+<img src="/Example Fable English.jpeg" alt="Example Fable English" style="length:500px;"/>
+
 * Example Chinese Fable
-![Index](Example Fable Chinese.jpeg)
+
+<img src="/Example Fable Mandarin.png" alt="Example Fable Mandarin" style="length:500px;"/>
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
